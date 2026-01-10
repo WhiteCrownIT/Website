@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global business valuation services and financial due diligence from India. Expert 409A valuation, M&A analysis, and portfolio company valuation for PE/VC funds, audit firms, and investors worldwide.">
+    <meta name="keywords" content="business valuation services India, financial due diligence outsourcing, 409A valuation India, M&A valuation experts, portfolio company valuation, ESOP valuation global">
+    <title>ValuPro Global | Business Valuation & Financial Due Diligence Services India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a3a5c;
+            --secondary-color: #2563eb;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2563eb 100%);
+            color: var(--white);
+            padding: 120px 0 80px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #e0e7ff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-alt {
+            background: var(--bg-light);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item p {
+            color: var(--text-light);
+        }
+
+        /* Industries */
+        .industries-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .industry-tag {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Case Studies */
+        .case-studies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .case-study {
+            background: var(--white);
+            padding: 2rem;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .case-study .metric {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .case-study p {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* About */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            line-height: 1.9;
+            color: var(--text-dark);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 15px 50px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background: var(--primary-color);
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">ValuPro Global</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Global Expertise, Indian Efficiency</h1>
+            <p class="subtitle">Delivering World-Class Business Valuation & Financial Due Diligence from India to Global Markets</p>
+            <a href="#contact" class="cta-button">Get Your Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <p class="section-subtitle">Comprehensive valuation and due diligence solutions tailored for global private equity, venture capital, and institutional investors</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Business Valuation Services</h3>
+                    <p>Expert DCF modeling, comparable company analysis, and precedent transaction multiples for M&A, fundraising, and strategic planning. Full compliance with IFRS 13, IND AS, and international standards.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>409A & ESOP Valuations</h3>
+                    <p>IRS-compliant 409A valuations for US startups and comprehensive ESOP valuation reports under Indian regulations. Support your equity compensation strategy with defensible fair market value assessments.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>M&A Due Diligence</h3>
+                    <p>Deep-dive financial, operational, and commercial due diligence for cross-border transactions. Quality of earnings analysis, working capital assessments, and deal structuring support.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Portfolio Company Valuation</h3>
+                    <p>Quarterly and annual fair value assessments for PE/VC fund portfolios. Cap table management, dilution analysis, and waterfall modeling to track your investment performance accurately.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>IPO Readiness & Compliance</h3>
+                    <p>Pre-IPO valuations, financial statement preparation, and regulatory compliance advisory. Navigate complex listing requirements with confidence for NSE, BSE, or international exchanges.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Intangible Asset Valuation</h3>
+                    <p>Specialized valuation of patents, trademarks, technology platforms, customer relationships, and brands. Critical for purchase price allocation, impairment testing, and transfer pricing documentation.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Energy & Infrastructure Valuations</h3>
+                    <p>Project finance modeling, renewable energy asset valuations, and infrastructure investment analysis. Deep sector expertise in solar, wind, oil & gas, and power generation.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Related Party Transactions</h3>
+                    <p>Transfer pricing compliance, arm's length pricing studies, and independent fairness opinions. Mitigate regulatory risk and ensure transparent governance for cross-border transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Why Choose ValuPro Global?</h2>
+            <p class="section-subtitle">Combining Big 4 rigor with Indian cost efficiency to deliver unmatched value</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <h3>30-50% Cost Savings</h3>
+                    <p>Access premium valuation services at a fraction of Western firm rates without compromising on quality or compliance standards.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <h3>24/7 Global Operations</h3>
+                    <p>Leverage the IST timezone advantage for rapid turnarounds. Submit requests before close of business and receive deliverables by morning.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Big 4 Credentials</h3>
+                    <p>Led by a Registered Valuer with extensive Big 4 experience, MBA qualifications, and deep expertise in international financial reporting standards.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Data Security & Confidentiality</h3>
+                    <p>Bank-grade encryption, NDA-protected engagements, and ISO-compliant data handling protocols. Your sensitive financial information remains secure.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Proprietary Excel/VBA financial models, SQL-driven data analysis, and customized reporting dashboards tailored to your investment thesis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section id="industries">
+        <div class="container">
+            <h2 class="section-title">Industries We Serve</h2>
+            <p class="section-subtitle">Sector-specific expertise across high-growth verticals</p>
+
+            <div class="industries-list">
+                <div class="industry-tag">⚡ Energy & Renewables</div>
+                <div class="industry-tag">🌾 AgriTech & Food Systems</div>
+                <div class="industry-tag">🚗 Mobility & Logistics</div>
+                <div class="industry-tag">💳 FinTech & Payments</div>
+                <div class="industry-tag">🏢 Real Estate & Infrastructure</div>
+                <div class="industry-tag">🏥 HealthTech & Life Sciences</div>
+                <div class="industry-tag">🛒 E-Commerce & Retail</div>
+                <div class="industry-tag">🤖 AI & SaaS Platforms</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Proven Track Record</h2>
+            <p class="section-subtitle">Real results for real clients (details anonymized for confidentiality)</p>
+
+            <div class="case-studies">
+                <div class="case-study">
+                    <div class="metric">$50M Portfolio Valued</div>
+                    <p><strong>Challenge:</strong> US-based VC fund needed quarterly fair value assessments for 12 portfolio companies across fintech and mobility sectors.</p>
+                    <p><strong>Solution:</strong> Delivered comprehensive valuation reports with dilution analysis and cap table reconciliation within 10 business days.</p>
+                    <p><strong>Impact:</strong> Enabled $20M fundraise by providing LP-ready financial statements and investment performance metrics.</p>
+                </div>
+
+                <div class="case-study">
+                    <div class="metric">15-Day IPO Prep</div>
+                    <p><strong>Challenge:</strong> Indian agritech startup preparing for NSE listing required pre-IPO valuation and SEBI compliance documentation.</p>
+                    <p><strong>Solution:</strong> Conducted DCF and precedent transaction analysis, prepared valuation report, and coordinated with legal counsel for regulatory filings.</p>
+                    <p><strong>Impact:</strong> Successful listing at 18% premium to fair value estimate, validating our methodology and market calibration.</p>
+                </div>
+
+                <div class="case-study">
+                    <div class="metric">$8M Deal Saved</div>
+                    <p><strong>Challenge:</strong> European PE firm conducting buy-side due diligence on Indian renewable energy asset with complex power purchase agreements.</p>
+                    <p><strong>Solution:</strong> Identified $8M discrepancy in working capital calculations and highlighted regulatory risk in project contracts during quality of earnings review.</p>
+                    <p><strong>Impact:</strong> Client renegotiated deal terms, saving $8M and restructuring earnout provisions to mitigate identified risks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Founder -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About the Founder</h2>
+            <div class="about-content">
+                <p>ValuPro Global is founded and led by a <strong>Registered Valuer (India)</strong> with over a decade of experience in financial advisory and valuation services. After honing expertise at a Big 4 firm working on cross-border M&A transactions, IPO valuations, and complex financial instruments, the vision was clear: bring world-class valuation rigor to global clients at accessible Indian pricing.</p>
+
+                <p>Armed with an MBA and deep technical knowledge in DCF modeling, comparable multiples, intangible asset valuation, and regulatory compliance (IFRS 13, IND AS, transfer pricing), our founder has personally led valuations exceeding $500M in aggregate transaction value across energy, fintech, agritech, and mobility sectors. This hands-on expertise translates directly to deliverables you can trust for high-stakes decisions—whether you're deploying capital, exiting investments, or preparing for public markets.</p>
+
+                <p>At ValuPro Global, we're passionate about democratizing access to premium financial advisory services. We believe every investor, entrepreneur, and fund manager deserves rigorous analysis without the premium Western price tag.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Get Started Today</h2>
+            <p class="section-subtitle">Serving clients across North America, Europe, Asia, and emerging markets</p>
+
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company/Fund Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="business-valuation">Business Valuation</option>
+                            <option value="409a-esop">409A / ESOP Valuation</option>
+                            <option value="due-diligence">M&A Due Diligence</option>
+                            <option value="portfolio-valuation">Portfolio Company Valuation</option>
+                            <option value="ipo-readiness">IPO Readiness</option>
+                            <option value="intangible-assets">Intangible Asset Valuation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" required placeholder="Briefly describe your valuation needs, timeline, and any specific requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Request Free Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is your typical turnaround time?
+                    </div>
+                    <div class="faq-answer">
+                        Standard business valuations: 7-10 business days. Portfolio company quarterly valuations: 5-7 business days. M&A due diligence: 10-15 business days depending on complexity. Rush services available with 48-72 hour delivery for urgent needs at a premium.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do you ensure data security and confidentiality?
+                    </div>
+                    <div class="faq-answer">
+                        We employ bank-grade 256-bit encryption for all data transmission, maintain ISO 27001-compliant data handling protocols, execute bilateral NDAs before engagement, use secure virtual data rooms for document exchange, and limit access strictly on a need-to-know basis. Your sensitive financial information never leaves our secure infrastructure.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What are your pricing models?
+                    </div>
+                    <div class="faq-answer">
+                        We offer flexible engagement models: (1) Fixed-fee per valuation report starting at $2,500, (2) Monthly retainer for ongoing portfolio valuations and advisory, (3) Hourly billing for ad-hoc consulting at $150-250/hour depending on seniority. Volume discounts available for multi-company engagements. All pricing is transparent with no hidden fees.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are your valuations acceptable to auditors and regulators?
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely. Our valuation reports fully comply with IFRS 13, IND AS 113, ASC 820 (US GAAP), and IRS guidelines for 409A valuations. As a Registered Valuer under Indian regulations and trained in Big 4 methodology, our reports are routinely accepted by Big 4 audit firms, SEC reviewers, SEBI, and international regulatory bodies.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you work with clients outside India?
+                    </div>
+                    <div class="faq-answer">
+                        Yes, over 70% of our client base is international—primarily US, UK, EU, and Singapore-based PE/VC funds, audit firms, and corporates. We're experienced in cross-border transactions, multi-currency modeling, and jurisdiction-specific regulatory requirements. Time zone differences actually work in your favor with our 24/7 operational model.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What information do you need to get started?
+                    </div>
+                    <div class="faq-answer">
+                        For a business valuation: 3 years of historical financials, current cap table, management projections, details on recent funding rounds or transactions, and industry/competitive context. For due diligence: virtual data room access including financials, contracts, operational metrics, and legal documents. We provide a detailed information request list upon engagement.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ValuPro Global. All rights reserved. | Registered Valuer, India | Serving Global Markets</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Business Valuation Services India | Financial Due Diligence Outsourcing | 409A Valuation India | M&A Valuation Experts</p>
+        </div>
+    </footer>
+</body>
+</html>
