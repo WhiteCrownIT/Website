@@ -1,5 +1,6 @@
 /* ============================================
-   White Crown Enterprises - Main Stylesheet
+   Business Valuation & M&A Due Diligence Website
+   Version 2 - Custom Color Palette
    ============================================ */
 
 /* ============================================
@@ -27,86 +28,65 @@ html {
 }
 
 /* ============================================
-   2. CSS VARIABLES - THEME COLORS
+   2. CSS VARIABLES - BRAND COLOR PALETTE
    ============================================ */
 
 /* Light Theme (Default) */
 :root {
-    /* Brand Colors */
-    --primary-green: #52B788;
-    --primary-dark: #0A3622;
-    --accent-green: #7ED957;
-    --light-green: #95d5b2;
+    /* Brand Colors - As Specified */
+    --primary-accent: #8BCF8E;        /* Light Green - Primary Accent */
+    --primary-bg: #FFFFFF;            /* White - Primary Background */
+    --heading-color: #2F5C32;         /* Deep Forest Green - Headings & emphasis */
+    --divider-color: #E5E5E5;         /* Soft Grey - Dividers, neutral UI */
+    --mint-bg: #CFF3D1;               /* Mint Green - Light background fills */
+    --body-text: #4A4A4A;             /* Charcoal Grey - Body text */
+    --cta-color: #1B8A5A;             /* Emerald Green - Call-to-action elements */
+    --warm-bg: #F7F5EF;               /* Light Beige - Warm background for text-heavy sections */
 
-    /* Backgrounds */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8faf9;
-    --bg-alt: #f1faee;
-    --card-bg: #ffffff;
-
-    /* Text Colors */
-    --text-primary: #0A3622;
-    --text-secondary: #2d6a4f;
-    --text-muted: #52796f;
-
-    /* UI Elements */
-    --border-color: #d5f4e6;
-    --border-hover: #52B788;
-    --white: #ffffff;
+    /* Derived Colors */
+    --card-bg: #FFFFFF;
+    --border-color: #E5E5E5;
+    --white: #FFFFFF;
 
     /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(10, 54, 34, 0.08);
-    --shadow-md: 0 4px 12px rgba(10, 54, 34, 0.12);
-    --shadow-lg: 0 12px 24px rgba(10, 54, 34, 0.15);
-    --shadow-xl: 0 20px 40px rgba(10, 54, 34, 0.2);
+    --shadow-sm: 0 1px 3px rgba(47, 92, 50, 0.08);
+    --shadow-md: 0 4px 12px rgba(47, 92, 50, 0.12);
+    --shadow-lg: 0 12px 24px rgba(47, 92, 50, 0.15);
+    --shadow-xl: 0 20px 40px rgba(47, 92, 50, 0.2);
 }
 
 /* Light Theme Explicit */
 [data-theme="light"] {
-    --primary-green: #52B788;
-    --primary-dark: #0A3622;
-    --accent-green: #7ED957;
-    --light-green: #95d5b2;
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8faf9;
-    --bg-alt: #f1faee;
-    --text-primary: #0A3622;
-    --text-secondary: #2d6a4f;
-    --text-muted: #52796f;
-    --border-color: #d5f4e6;
-    --border-hover: #52B788;
-    --card-bg: #ffffff;
-    --shadow-sm: 0 1px 3px rgba(10, 54, 34, 0.08);
-    --shadow-md: 0 4px 12px rgba(10, 54, 34, 0.12);
-    --shadow-lg: 0 12px 24px rgba(10, 54, 34, 0.15);
-    --shadow-xl: 0 20px 40px rgba(10, 54, 34, 0.2);
+    --primary-accent: #8BCF8E;
+    --primary-bg: #FFFFFF;
+    --heading-color: #2F5C32;
+    --divider-color: #E5E5E5;
+    --mint-bg: #CFF3D1;
+    --body-text: #4A4A4A;
+    --cta-color: #1B8A5A;
+    --warm-bg: #F7F5EF;
+    --card-bg: #FFFFFF;
+    --border-color: #E5E5E5;
+    --white: #FFFFFF;
+    --shadow-sm: 0 1px 3px rgba(47, 92, 50, 0.08);
+    --shadow-md: 0 4px 12px rgba(47, 92, 50, 0.12);
+    --shadow-lg: 0 12px 24px rgba(47, 92, 50, 0.15);
+    --shadow-xl: 0 20px 40px rgba(47, 92, 50, 0.2);
 }
 
 /* Dark Theme */
 [data-theme="dark"] {
-    /* Brand Colors - Brighter and more vibrant */
-    --primary-green: #52B788;
-    --primary-dark: #7ED957;
-    --accent-green: #95d5b2;
-    --light-green: #40916c;
-
-    /* Backgrounds - Softer, more modern dark grays with green tint */
-    --bg-primary: #1a1f1e;
-    --bg-secondary: #242b29;
-    --bg-alt: #2a3331;
+    --primary-accent: #8BCF8E;
+    --primary-bg: #1a1f1e;
+    --heading-color: #8BCF8E;
+    --divider-color: #3d4f48;
+    --mint-bg: #2a3331;
+    --body-text: #b8d4c4;
+    --cta-color: #1B8A5A;
+    --warm-bg: #242b29;
     --card-bg: #242b29;
-
-    /* Text Colors - Better contrast */
-    --text-primary: #e8f5e9;
-    --text-secondary: #b8d4c4;
-    --text-muted: #8fa99a;
-
-    /* UI Elements */
     --border-color: #3d4f48;
-    --border-hover: #52B788;
     --white: #ffffff;
-
-    /* Shadows - More pronounced for depth */
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
     --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.6);
@@ -119,11 +99,10 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.7;
-    color: var(--text-primary);
-    background: var(--bg-primary);
+    color: var(--body-text);
+    background: var(--primary-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -131,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -0.02em;
+    color: var(--heading-color);
 }
 
 /* ============================================
@@ -147,8 +127,7 @@ section {
 }
 
 .section-alt {
-    background: var(--bg-secondary);
-    transition: background-color 0.3s ease;
+    background: var(--warm-bg);
 }
 
 /* ============================================
@@ -186,23 +165,23 @@ nav {
 }
 
 .logo-img {
-    height: 50px;
+    height: 65px;
     width: auto;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .logo:hover .logo-img {
-    transform: scale(1.05);
+    transform: scale(1.0);
 }
 
 .logo-text {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--heading-color);
     font-family: 'Playfair Display', serif;
     letter-spacing: -0.02em;
     line-height: 1.2;
-    transition: color 0.3s ease;
+    text-align: center;
 }
 
 .logo-text .company-name {
@@ -212,11 +191,11 @@ nav {
 
 .logo-text .tagline {
     display: block;
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: var(--text-muted);
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #555;
     font-family: 'Inter', sans-serif;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
 }
 
@@ -229,7 +208,7 @@ nav {
 }
 
 .nav-links a {
-    color: var(--text-primary);
+    color: var(--heading-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
@@ -244,7 +223,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-green);
+    background: var(--primary-accent);
     transition: width 0.3s ease;
 }
 
@@ -253,11 +232,11 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--primary-green);
+    color: var(--primary-accent);
 }
 
 .nav-cta {
-    background: var(--primary-green);
+    background: var(--cta-color);
     color: var(--white) !important;
     padding: 10px 24px;
     border-radius: 8px;
@@ -270,10 +249,9 @@ nav {
 }
 
 .nav-cta:hover {
-    background: var(--primary-dark);
+    background: var(--heading-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    color: var(--white) !important;
 }
 
 .nav-right {
@@ -295,7 +273,7 @@ nav {
     display: block;
     width: 25px;
     height: 2px;
-    background: var(--text-primary);
+    background: var(--heading-color);
     margin: 5px 0;
     transition: 0.3s;
 }
@@ -304,7 +282,7 @@ nav {
    6. THEME TOGGLE
    ============================================ */
 .theme-toggle {
-    background: var(--bg-secondary);
+    background: var(--mint-bg);
     border: 2px solid var(--border-color);
     border-radius: 50px;
     width: 60px;
@@ -316,7 +294,7 @@ nav {
 }
 
 .theme-toggle:hover {
-    border-color: var(--primary-green);
+    border-color: var(--primary-accent);
     transform: scale(1.05);
 }
 
@@ -326,7 +304,7 @@ nav {
     left: 3px;
     width: 22px;
     height: 22px;
-    background: var(--primary-green);
+    background: var(--cta-color);
     border-radius: 50%;
     transition: transform 0.3s ease;
     display: flex;
@@ -343,15 +321,11 @@ nav {
    7. HERO SECTION
    ============================================ */
 .hero {
-    background: linear-gradient(135deg, rgba(82, 183, 136, 0.05) 0%, rgba(149, 213, 178, 0.08) 100%);
+    background: linear-gradient(135deg, var(--mint-bg) 0%, var(--primary-bg) 100%);
     padding: 160px 0 100px;
     margin-top: 76px;
     position: relative;
     overflow: hidden;
-}
-
-[data-theme="dark"] .hero {
-    background: linear-gradient(135deg, rgba(82, 183, 136, 0.08) 0%, rgba(126, 217, 87, 0.12) 100%);
 }
 
 .hero::before {
@@ -361,7 +335,7 @@ nav {
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(126, 217, 87, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(139, 207, 142, 0.15) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -376,7 +350,7 @@ nav {
 .hero-badge {
     display: inline-block;
     background: var(--card-bg);
-    color: var(--primary-green);
+    color: var(--cta-color);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.875rem;
@@ -384,26 +358,25 @@ nav {
     margin-bottom: 24px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 24px;
-    color: var(--text-primary);
+    color: var(--heading-color);
     line-height: 1.15;
 }
 
 .hero h1 .highlight {
-    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+    background: linear-gradient(135deg, var(--cta-color), var(--primary-accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .hero .subtitle {
-    font-size: 1.35rem;
-    color: var(--text-muted);
+    font-size: 1.25rem;
+    color: var(--body-text);
     margin-bottom: 40px;
     line-height: 1.6;
     font-weight: 400;
@@ -433,62 +406,31 @@ nav {
 }
 
 .btn-primary {
-    background: var(--primary-green);
+    background: var(--cta-color);
     color: var(--white);
     box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
-    background: var(--primary-dark);
+    background: var(--heading-color);
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
 }
 
 .btn-secondary {
     background: var(--card-bg);
-    color: var(--primary-green);
+    color: var(--cta-color);
     border-color: var(--border-color);
 }
 
 .btn-secondary:hover {
-    border-color: var(--primary-green);
+    border-color: var(--primary-accent);
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
 }
 
 /* ============================================
-   9. TRUST BAR
-   ============================================ */
-.trust-bar {
-    background: var(--card-bg);
-    padding: 48px 0;
-    border-bottom: 1px solid var(--border-color);
-    transition: background-color 0.3s ease;
-}
-
-.trust-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    text-align: center;
-}
-
-.trust-stat h3 {
-    font-size: 2.5rem;
-    color: var(--primary-green);
-    margin-bottom: 8px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-}
-
-.trust-stat p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    font-weight: 500;
-}
-
-/* ============================================
-   10. SECTION HEADERS
+   9. SECTION HEADERS
    ============================================ */
 .section-header {
     text-align: center;
@@ -498,8 +440,8 @@ nav {
 
 .section-badge {
     display: inline-block;
-    background: var(--bg-secondary);
-    color: var(--primary-green);
+    background: var(--mint-bg);
+    color: var(--cta-color);
     padding: 6px 16px;
     border-radius: 50px;
     font-size: 0.875rem;
@@ -507,24 +449,108 @@ nav {
     margin-bottom: 16px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    transition: all 0.3s ease;
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 20px;
-    color: var(--text-primary);
+    color: var(--heading-color);
 }
 
 .section-subtitle {
-    font-size: 1.2rem;
-    color: var(--text-muted);
+    font-size: 1.15rem;
+    color: var(--body-text);
     line-height: 1.7;
     font-weight: 400;
 }
 
 /* ============================================
-   11. SERVICES GRID
+   10. OVERVIEW SECTION
+   ============================================ */
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 48px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--primary-accent);
+}
+
+.overview-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--body-text);
+}
+
+.overview-content strong {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+/* ============================================
+   11. STANDARDS GRID
+   ============================================ */
+.standards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 32px;
+}
+
+.standard-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.standard-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-accent);
+}
+
+.standard-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.standard-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--heading-color);
+}
+
+.standard-card p {
+    color: var(--body-text);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.standard-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.standard-card li {
+    color: var(--body-text);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--divider-color);
+    font-size: 0.95rem;
+}
+
+.standard-card li:last-child {
+    border-bottom: none;
+}
+
+.standard-card li strong {
+    color: var(--cta-color);
+    font-weight: 600;
+}
+
+/* ============================================
+   12. SERVICES GRID
    ============================================ */
 .services-grid {
     display: grid;
@@ -549,7 +575,7 @@ nav {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-green), var(--accent-green));
+    background: linear-gradient(90deg, var(--cta-color), var(--primary-accent));
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -562,13 +588,13 @@ nav {
 .service-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-xl);
-    border-color: var(--border-hover);
+    border-color: var(--primary-accent);
 }
 
 .service-icon {
     width: 56px;
     height: 56px;
-    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
+    background: linear-gradient(135deg, var(--primary-accent), var(--mint-bg));
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -578,178 +604,172 @@ nav {
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 16px;
-    color: var(--text-primary);
+    color: var(--heading-color);
 }
 
 .service-card p {
-    color: var(--text-muted);
+    color: var(--body-text);
     line-height: 1.8;
     font-size: 0.98rem;
 }
 
 /* ============================================
-   12. FEATURES GRID
+   13. EXPERIENCE SECTION
    ============================================ */
-.features-grid {
+.experience-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
+    margin-bottom: 48px;
 }
 
-.feature-item {
+.experience-stat {
     text-align: center;
-}
-
-.feature-icon {
-    width: 80px;
-    height: 80px;
-    background: var(--bg-secondary);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 24px;
-    font-size: 2.5rem;
-    border: 2px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.feature-item:hover .feature-icon {
-    transform: scale(1.1);
-    border-color: var(--primary-green);
-    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
-}
-
-.feature-item h3 {
-    font-size: 1.35rem;
-    margin-bottom: 12px;
-    color: var(--text-primary);
-}
-
-.feature-item p {
-    color: var(--text-muted);
-    line-height: 1.7;
-    font-size: 0.98rem;
-}
-
-/* ============================================
-   13. INDUSTRIES GRID
-   ============================================ */
-.industries-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.industry-card {
-    background: var(--card-bg);
+    background: var(--mint-bg);
     padding: 32px;
     border-radius: 12px;
-    text-align: center;
     border: 2px solid var(--border-color);
     transition: all 0.3s ease;
-    cursor: default;
 }
 
-.industry-card:hover {
-    border-color: var(--primary-green);
-    transform: translateY(-4px);
+.experience-stat:hover {
+    transform: translateY(-6px);
     box-shadow: var(--shadow-md);
+    border-color: var(--primary-accent);
 }
 
-.industry-card .icon {
-    font-size: 2.5rem;
+.experience-stat h3 {
+    font-size: 3rem;
+    color: var(--cta-color);
     margin-bottom: 12px;
-    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
 }
 
-.industry-card h4 {
-    font-size: 1.1rem;
-    color: var(--text-primary);
+.experience-stat p {
+    color: var(--heading-color);
+    font-size: 0.95rem;
     font-weight: 600;
 }
 
+.credentials-text {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 48px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.credentials-text p {
+    color: var(--body-text);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
 /* ============================================
-   14. CASE STUDIES
+   14. BENEFITS GRID
    ============================================ */
-.case-studies {
+.benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
 }
 
-.case-study {
+.benefit-card {
     background: var(--card-bg);
-    padding: 40px;
-    border-radius: 16px;
-    border-left: 4px solid var(--primary-green);
-    box-shadow: var(--shadow-md);
+    padding: 32px;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
     transition: all 0.3s ease;
 }
 
-.case-study:hover {
+.benefit-card:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-accent);
 }
 
-.case-study .metric {
+.benefit-icon {
     font-size: 2.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 20px;
-    font-family: 'Inter', sans-serif;
+    margin-bottom: 16px;
 }
 
-.case-study h4 {
-    font-size: 1.1rem;
-    color: var(--text-primary);
-    margin-bottom: 8px;
-    font-weight: 600;
-}
-
-.case-study p {
-    color: var(--text-muted);
-    line-height: 1.8;
+.benefit-card h3 {
+    font-size: 1.25rem;
     margin-bottom: 12px;
+    color: var(--heading-color);
+}
+
+.benefit-card p {
+    color: var(--body-text);
+    line-height: 1.7;
     font-size: 0.95rem;
 }
 
 /* ============================================
-   15. ABOUT SECTION
+   15. CALL TO ACTION SECTION
    ============================================ */
-.about-content {
-    max-width: 900px;
+#cta-section {
+    background: linear-gradient(135deg, var(--cta-color), var(--heading-color));
+    color: var(--white);
+    padding: 80px 0;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
     margin: 0 auto;
-    background: var(--card-bg);
-    padding: 64px;
-    border-radius: 20px;
-    box-shadow: var(--shadow-lg);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
 }
 
-.about-content p {
-    color: var(--text-muted);
-    line-height: 1.9;
-    margin-bottom: 24px;
-    font-size: 1.05rem;
+.cta-content h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
 }
 
-.about-content strong {
-    color: var(--primary-green);
-    font-weight: 600;
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn-primary {
+    background: var(--white);
+    color: var(--cta-color);
+}
+
+.cta-buttons .btn-primary:hover {
+    background: var(--mint-bg);
+    color: var(--heading-color);
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: var(--white);
+    color: var(--cta-color);
 }
 
 /* ============================================
    16. CONTACT FORM
    ============================================ */
 .contact-wrapper {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -759,7 +779,12 @@ nav {
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
 }
 
 .form-group {
@@ -770,7 +795,7 @@ nav {
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--heading-color);
     font-size: 0.95rem;
 }
 
@@ -784,16 +809,16 @@ nav {
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
-    background: var(--bg-primary);
-    color: var(--text-primary);
+    background: var(--primary-bg);
+    color: var(--body-text);
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: var(--primary-green);
-    box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.1);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 0 3px rgba(139, 207, 142, 0.1);
 }
 
 .form-group textarea {
@@ -803,7 +828,7 @@ nav {
 }
 
 .submit-button {
-    background: var(--primary-green);
+    background: var(--cta-color);
     color: var(--white);
     padding: 16px 48px;
     border: none;
@@ -817,110 +842,18 @@ nav {
 }
 
 .submit-button:hover {
-    background: var(--primary-dark);
+    background: var(--heading-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 /* ============================================
-   17. FAQ SECTION
-   ============================================ */
-.faq-container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.faq-item {
-    background: var(--card-bg);
-    margin-bottom: 20px;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.faq-item:hover {
-    box-shadow: var(--shadow-md);
-}
-
-.faq-question {
-    padding: 28px 32px;
-    font-weight: 600;
-    color: var(--text-primary);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.05rem;
-    transition: all 0.3s ease;
-}
-
-.faq-question:hover {
-    color: var(--primary-green);
-}
-
-.faq-question::after {
-    content: '+';
-    font-size: 1.5rem;
-    color: var(--primary-green);
-    font-weight: 300;
-    transition: transform 0.3s ease;
-}
-
-.faq-answer {
-    padding: 0 32px 28px;
-    color: var(--text-muted);
-    line-height: 1.8;
-    font-size: 0.98rem;
-}
-
-/* ============================================
-   18. FOOTER
+   17. FOOTER
    ============================================ */
 footer {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+    background: linear-gradient(135deg, var(--heading-color), var(--cta-color));
     color: var(--white);
     padding: 64px 0 32px;
-}
-
-[data-theme="dark"] footer {
-    background: linear-gradient(135deg, #1a2e27, #2d6a4f);
-}
-
-/* Dark theme specific adjustments */
-[data-theme="dark"] .hero h1 .highlight {
-    background: linear-gradient(135deg, #52B788, #7ED957);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-[data-theme="dark"] .service-icon {
-    background: linear-gradient(135deg, #52B788, #40916c);
-    box-shadow: 0 4px 12px rgba(82, 183, 136, 0.2);
-}
-
-[data-theme="dark"] .feature-item:hover .feature-icon {
-    background: linear-gradient(135deg, #52B788, #7ED957);
-}
-
-[data-theme="dark"] .nav-cta {
-    background: #52B788;
-    box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3);
-}
-
-[data-theme="dark"] .nav-cta:hover {
-    background: #40916c;
-}
-
-[data-theme="dark"] .btn-primary {
-    background: #52B788;
-    box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3);
-}
-
-[data-theme="dark"] .btn-primary:hover {
-    background: #40916c;
-    box-shadow: 0 8px 20px rgba(82, 183, 136, 0.4);
 }
 
 .footer-content {
@@ -934,6 +867,7 @@ footer {
     font-size: 1.3rem;
     margin-bottom: 20px;
     font-weight: 700;
+    color: var(--white);
 }
 
 .footer-section p,
@@ -947,7 +881,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: var(--accent-green);
+    color: var(--primary-accent);
 }
 
 .footer-bottom {
@@ -959,13 +893,13 @@ footer {
 }
 
 /* ============================================
-   19. SCROLL TO TOP BUTTON
+   18. SCROLL TO TOP BUTTON
    ============================================ */
 .scroll-to-top {
     position: fixed;
     bottom: 32px;
     right: 32px;
-    background: var(--primary-green);
+    background: var(--cta-color);
     color: var(--white);
     width: 48px;
     height: 48px;
@@ -987,12 +921,12 @@ footer {
 }
 
 .scroll-to-top:hover {
-    background: var(--primary-dark);
+    background: var(--heading-color);
     transform: translateY(-4px);
 }
 
 /* ============================================
-   20. ANIMATIONS
+   19. ANIMATIONS
    ============================================ */
 @keyframes fadeInUp {
     from {
@@ -1010,13 +944,13 @@ footer {
 }
 
 /* ============================================
-   21. RESPONSIVE DESIGN
+   20. RESPONSIVE DESIGN
    ============================================ */
 
 /* Tablet */
 @media (max-width: 968px) {
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.75rem;
     }
 
     .section-title {
@@ -1024,11 +958,11 @@ footer {
     }
 
     .services-grid,
-    .case-studies {
+    .standards-grid {
         grid-template-columns: 1fr;
     }
 
-    .about-content,
+    .credentials-text,
     .contact-form {
         padding: 40px 32px;
     }
@@ -1037,7 +971,7 @@ footer {
 /* Mobile */
 @media (max-width: 768px) {
     .logo-img {
-        height: 40px;
+        height: 50px;
     }
 
     .logo-text .company-name {
@@ -1084,23 +1018,27 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.25rem;
-    }
-
-    .hero .subtitle {
-        font-size: 1.1rem;
-    }
-
-    .section-title {
         font-size: 2rem;
     }
 
-    .trust-stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+    .hero .subtitle {
+        font-size: 1.05rem;
     }
 
-    .industries-grid {
+    .section-title {
+        font-size: 1.85rem;
+    }
+
+    .experience-content {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
     }
 }
